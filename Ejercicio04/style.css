@@ -1,0 +1,230 @@
+/*@font-face {
+    src: url();
+} para poner una foto diferente*/
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "botanika-web", sans-serif;
+    font-style: normal;
+}
+
+.texto {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -2%;
+    text-align:center;
+}
+.resaltado {
+    color: #0e9e09;
+    font-weight: bold;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.título {
+    font-size: 25px;
+    color: #0e9e09;;
+    font-weight: bold;
+}
+
+.título2 {
+    font-size: 40px;
+    color: #0e9e09;;
+    font-weight: bold;
+}
+
+/*IMÁGENES*/
+
+img.fluida {
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.mapa {
+    width: 100%;
+    max-width: 30%;
+    margin-right: 50px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ddd;
+}
+
+header h1 a:hover {
+    color: #fff;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(https://thumbs.dreamstime.com/z/no-plastic-go-green-zero-waste-reduce-reuse-refuse-reycle-concepts-rot-ecological-lifestyle-sustainable-development-linear-214990319.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: -1; 
+}
+
+.veladura {
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(14, 158, 9, .2);
+    padding: 40px;
+}
+
+.central {
+    padding: 50px;
+    width: 60%;
+}
+
+header, footer {
+    height: 8vh;
+    background-color: #0e9e09;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    width: 500px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+h2 {
+    font-size: 50px;
+    text-align: center;
+}
+
+section {
+    position: absolute;
+    top: 50%; 
+    left: 3%; 
+    transform: translate(0, -50%);
+    z-index: 2; /* Asegura que esté por encima de la veladura */
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.item2 {
+    width: 90%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.actividad {
+    width: 80%; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+
+.mapa {
+    width: 28%;
+    max-width: 100%; 
+}
+
+p {
+    font-size: 16px; 
+    line-height: 1.5; 
+    color: #333; 
+    margin: 0;
+}
+
+.nuevo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+}
+
+/* Redes sociales */
+.redes {
+    display: flex; 
+    align-content: center;
+    gap: 20px;
+}
+
+.icono {
+    text-align: center;
+}
+
+.icono img {
+    width: 130px;
+    margin-bottom: 10px;
+}
+
+.icono p {
+    font-weight: bold;
+    color: #0e9e09;
+}
+
+.item3 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    max-width: 1000px;
+    padding: 50px; 
+}
+
+.contenedor {
+    display: flex; 
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 auto; 
+    margin-top: -50px;
+}
+
+.info  {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 60%;
+    align-items: center;
+}
